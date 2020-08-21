@@ -1,0 +1,286 @@
+Advantages of Framework:
+Framework is nothing but organizing all your automation files.
+Maintainability of the scripts
+Reusability of the scripts
+
+1. Page Objects:
+	LoginPage.java
+	AddCustomerPage.java
+	EditCustomerPage.java
+	DeleteCustomerPage.java
+	
+2. Utilities: - Supporting files for all test cases, we don't use any testNG methods/annotations in utility classes. Eg: Listener class and data driven comes under utility classes
+	ReadConfig.java
+	Reporting.java
+	XLUtils.java
+
+3. Config Files: 
+	pom.xml
+	Extent.config.xml
+	Log4j.properties
+	Config.properties
+	
+4.	Test cases
+		Base Class -
+			1. loginTest.java
+			2. addNewCustomer.java
+			3. editCustomer.java
+			4. deleteCustomer.java
+			
+5.1	TestNG.xml
+5.2	pom.xml
+
+6. Maven Run.bat
+7. Jenkins
+
+Steps 1-4 -> Implementation/Development of Framework
+5		  -> Execution of framework
+6-7		  -> CI -> Continuous Integration	
+
+---------------------------------------------------------------------------------
+Phase-1:Implementation:
+	Create Maven Project
+	Update pom.xml
+	Create Page Objects
+	Create Basic Test case
+	Add Logs to test case
+	Read common values from properties file
+	Run test case on desired browser
+	Add extent report
+	Create Data Driven test case
+	Adding new test case
+	
+1. Create new Maven project
+2. Update pom.xml
+3. Create folder structure
+4. Create page object class for login screen
+5. Create base class
+6. Create login test case
+7. Add logs to the test case
+	
+Phase-2: Execution:
+	Run test case with Maven pom.xml
+	Run test cases thru Maven CLI(Command Line Interface)
+	Run test cases using run.bat
+	Run test cases using Jenkins( using bat file )
+	
+Phase-3: Maintenance:
+	Creating repository in GITHUB
+	Commit the project code in local repository
+	Push the project code to GITHUB remote repository from local GIT repository
+---------------------------------------------------------------------------
+Phase-1:Implementation:	
+Maven: 
+Maven is a plugin in Eclipse:Contains pom.xml
+Check if the Maven plug-in available in Eclipse -> Windows -> Preferences ->Maven
+If not available, goto Help->Eclipse MarketPlace->Search for Maven -> Install
+
+-Create a Maven project -> File-New-Other-Maven-Maven Project OR File - New -Maven Project(HybridFrameWork)
+-Under newly created MavenProject ->Delete the default packages under src/main/java and src/test/java
+-Added the following packages under src/test/java
+	com.HybridFrameWork.PageObjects
+	com.HybridFrameWork.testCases
+	com.HybridFrameWork.testData
+	com.HybridFrameWork.utilities
+-Added the following folders under the project HybridFrameWork
+	Drivers
+	Configuration
+	Screenshots
+	
+pom.xml 
+-Update pom.xml file - add dependencies
+-Goto mvnrepository.com - Search selenium Java - click on ver 3.14.0 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search TestNG - click on ver 6.14.3 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search apache.poi - click on ver 3.17 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search org.apache.poi - click on ver 3.12 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search aventstack - click on ver 3.1.2 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search apache.commons -> commons-lang3- click on ver 3.0 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search apache.commons -> commons-lang3- click on ver 3.0 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search apache.commons -> commons-io- click on ver 1.3.2 -copy xml code and paste it to pom.xml
+-Goto mvnrepository.com - Search sikuli -> click on ver 1.3.2 -copy xml com
+
+Drivers: 
+-Add chromedriver.exe and geckodriver.exe to Drivers folder
+
+Create LoginPage class and define/identify POM elements from LoginPage, Write action methods for the elements on Login Page
+Create BaseClass(Each test case contains @BeforeClass -> Preq steps, @Test ->actual steps, @AfterClass ->teardown. @BeforeClass and @AfterClass are common for each test case. Hence these two methods are added to Base class)
+Create TestCase TC_LoginTest_1 (extend Base class and write actual steps)
+
+log4j:
+log4j.jar - Download file and add it to project-buildpath OR update POM file with log4j dependency
+log4j.properties - add file directly under Project 
+Update BaseClass with log statements
+Add log messages in the test case TC_LoginTest_1
+Run the test case
+Refresh project
+log folder will be created under project->log->testlog.log has all the logs
+
+Reading common values from property file: 
+Create a property file under configuration folder. property file (config.properties) is a text file which contains all the variables with values required for the project. 
+	System.getProperty("user.dir") ---> only in java classes --> driver path -->forward //
+	./    ---> in java classes and in property (text)files -->driver path --> backward \\
+Create a utility file under utility package. The utility file ReadConfig.java will read the variables and values from config.properties file and provides to the base class.
+Update base class by replacing hard coded values with variables, that are defined in config.properties file
+Run test case again 
+log folder-> testlog.log will be created under project
+
+Run test case on desired browser based on the parameter passed thru TestNG.xml file.
+Base class will take the browser parameter from xml file
+Update Base class: add if conditional statements on browser
+Create TestNG.xml file under project -> project ->TestNG->Convert to TestNG
+Modify TestNG.xml and run the xml file
+
+Add extent report:
+1. jars - Maven will take care of it
+2. extent-config.xml - add it under project
+3. listener(Reporting.java) --> Utility file - Create Reporting.java under utility pkg
+4. Update TestNG.xml with listener class
+5. Run TestNG.xml
+6. Extent report will be created under project -test-output folder (refresh test-output folder)
+
+Data driven test:
+Apache poi jars 
+XLS file(test data)
+XLUtils.java
+@Dataprovider annotation
+
+add poi jars using pom file
+create XLUtils file under utils folder
+create XLS file under testdata folder
+create test case TC_LoginDDT_002 under test cases, no need to create a new page object class
+identify logout button and update LoginPage.java under PageObjects folder
+add logger messages to TC_LoginDDT_002
+add this new test case to TestNG.xml and run TestNG.xml
+
+Add a new test case: (Add new customer)
+Create pageobject class - AddCustomerPage with all elements and methods
+Create test case - TC_AddCustomerTest_003
+Add logs to test case
+Update TestNG.xml
+----------------------------------------------------------------------------------
+Phase-2: Execution:
+	Run test case with Maven pom.xml
+	Run test cases thru Maven CLI(Command Line Interface)
+	Run test cases using run.bat
+	Run test cases using Jenkins( using bat file )
+
+1) Run tests using pom.xml(within Eclipse)- pom.xml runs all the test cases thru TestNG.xml
+Update pom.xml by adding compiler plugin and surefire plugin between properties and dependencies
+Refresh project
+Right click on project - Maven - Update Project- OK - will fix any dependencies errors
+Right click on Project OR pom.xml - Run As - Maven test 
+You may get a compilation error like: No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+Maven needs jdk instead jre
+To fix the error goto Eclipse-windows-Preferences-Expand Java-Installed jres- if u see JRE folder, that is the issue- Browse and add jdk folder
+ 
+2) Run test cases thru Maven CLI(Command Line Interface) - Execute test cases outside project thru command line.
+Install maven on OS
+Execute all test cases thru command line prompt ( outside Eclipse )
+--Download maven to windows10 -https://maven.apache.org/download.cgi - Downloading Apache Maven 3.6.3-unzip the zip file - copy the entire folder apache-maven-3.6.0 under c drive
+Set maven environment variable
+--goto bin folder -- copy the path C:\apache-maven-3.6.3\bin 
+--goto windows explorer -- computer -properties - Advanced system settings - Environment variables - Select Path under system variables - click on Edit button - add C:\apache-maven-3.6.3\bin at the end in Variable value field - click  ok
+--goto windows explorer -- computer -properties - Advanced system settings - Environment variables - New - Variable name: M2_Home, Variable Value: C:\apache-maven-3.6.3\bin - ok
+--verify maven is configured correctly - cmd propt - mvn -version -> java path should be jdk path and not jre path - if you see jre folder - create JAVA_HOME system variable with java jdk path(eg: c:\Program Files\Java\jdk-10.0.2)-OK -Select path variable - Edit with %M2_HOME%\bin at the end -OK
+Link to fix jre/jdk issue - http://roufid.com/no-compiler-is-prov
+Run the tests thru CML:
+--Get pom.xml path -> C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1
+--In cmd prompt - Navigate to C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1 (cd C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1)
+--dir -> should see pom.xml and TestNG.xml
+--mvn clean install
+
+3) Run test cases thru run.bat
+--Get pom.xml path -> C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1
+--In explorer go to the above path create a run.bat file with content mvn clean install
+--Double click on the file
+
+4) Run test cases using Jenkins( using bat file )
+Jenkins is a continuous integration tool
+Maven is a build tool used by Dev Ops team
+Git and GitHub are repositories
+Developers will checkin their code in the repository by end of the day. 
+Devops will automatically pick that code from repository and create a build using maven (make exe file).
+QA will check in their test cases in the repository. Jenkins will run the sanity/regtession suite every night on the new build and sends out email
+The next day morning people see the build success/failure email. This is called CONTINUOUS INTEGRATION 
+If build passes QA will do the testing with new build in QA env
+--Jenkins installation and configuration: - Download link -https://jenkins.io/download
+--Download the .LTS war file
+--Place the war file into any location on your system (C://Program Files/jenkins)
+--Goto command prompt - cd to jenkins.war file
+java -jar jenkins.war
+1)Execute project using free style project(run.bat)
+- http://localhost:8080
+-New Item-Enter Item Name, select Free style project and click on OK - Enter project name, Description, Build -Execute windows batch command, 
+Enter cd C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1
+run.bat
+Apply, save
+Go back to Jenkins and will see the newly created project
+Build now
+2)Execute project using Maven(pom.xml)
+--http://localhost:8080
+--add maven plugins to jenkins -> From Jenkins screen click on Manage Jenkins -Manage Plugins-Goto Available tab- Select all with Maven word, click on Install without restart button
+--go to Jenkins dashboard screen->Click on Manage Jenkins-Global tool configuration - Click on JDK installations - Enter JDK Name, JAVA_HOME->c:\Program Files\Java\jdk-11.0.8\ (Note:configure JAVA_HOME under System Environment)-Apply Save
+--goto Dashboard--New Item-Enter Item Name, select maven project and click OK - Enter project name, Description, Build - Root POM->C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1\pom.xml, Goals and options->clean install, Post build actions->Editable email notification-add Project Recipient List, Project Reply To list,Content Type,Default Subject, Default Content-Apply save
+--Build now
+--------------------------------------------------------------------------------------------
+Phase-3: Maintenance:
+	Creating repository in GITHUB
+	Commit the project code in local repository
+	Push the project code to GITHUB remote repository from local GIT repository
+
+-- Developers check in their code to their local repository git after unit testing is passed
+-- At the end of the day the code will be pushed to global repository (Git Hub)
+-- Deveops will pick the code from Github and create a build using maven tool.
+-- Eclipse(working directory,untracked file) ADD command --> staging(staging area, Tracked file) COMMIT command -->git(git repository, committed file) Push command -->GitHub (Remote server, remote file) 
+-- Eclipse - staging -> ADD command - Tracked file
+-- staging - git 	 -> COMMIT command - Committed file (checkin)
+-- git - github      -> PUSH command - Remote file   (checkin)
+-- github - git  ->pull   (checkout)	
+
+1)Local repository (git)
+2)Remote OR Global repository(github)
+
+Git is a revision control system used to track changes in computer files. It's a tool to manage your code & file history which coordinating work remotely on those files with others.
+GitHub is a hosting service for git repositories. 
+Git is the tool, while GitHub is the service to use git
+
+GIT installation on Windows:
+https://git-scm.com/download/win/
+Verify git installation is successful -> windows explorer -> right click any folder - will see Git GUI Here, Git Bash Here options
+
+GitHub installation:
+https://github.com
+Create account on github
+Create  new repository, Copy SSH url (remote repository url) https://github.com/madhuevg/SdetHybrid1.git
+
+GIT Commands
+Windows explorer - Goto project home directory C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1 - Open Git Bash Here - 
+
+One time commands:
+git init --> Create GIT local repository -> --->.git local repository folder will be created
+git remote add origin "https://github.com/madhuevg/SdetHybrid1.git" ---> associate git repository with github repository
+
+Send the files from Eclipse to staging(Untracked to tracked)
+git status --> lists untracked and tracked files
+git add -A --> add all untracked files to staging area
+
+one time commands:
+git config --global user.name "madhuevg"
+git config --global user.email "madhuevg@yahoo.com"
+
+git commit -m "this is commit message" --> commit all tracked files from staging area to git repository
+git status
+
+git push -u origin master --> push files from git to github
+add email and password
+to verify if all the files are pushed to github -> navifate to github url https://github.com/madhuevg/SdetHybrid1.git and will see all the files
+
+Pre-requisites
+--------------
+1)Install git in your local system
+2) Create account in github
+
+
+
+
+

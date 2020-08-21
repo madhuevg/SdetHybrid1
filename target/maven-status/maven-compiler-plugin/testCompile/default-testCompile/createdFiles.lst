@@ -1,0 +1,9 @@
+com\SdetHybrid1\testCases\TC_AddCustomerTest_003.class
+com\SdetHybrid1\testCases\BaseClass.class
+com\SdetHybrid1\utilities\Reporting.class
+com\SdetHybrid1\testCases\TC_LoginDDT_002.class
+com\SdetHybrid1\testCases\TC_LoginTest_1.class
+com\SdetHybrid1\utilities\ReadConfig.class
+com\SdetHybrid1\utilities\XLUtils.class
+com\SdetHybrid1\PageObjects\AddCustomerPage.class
+com\SdetHybrid1\PageObjects\LoginPage.class
