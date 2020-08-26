@@ -258,7 +258,7 @@ Windows explorer - Goto project home directory C:\Users\pkantipudi\eclipse-works
 
 One time commands:
 git init --> Create GIT local repository -> --->.git local repository folder will be created
-git remote add origin "https://github.com/madhuevg/SdetHybrid1.git" ---> associate git repository with github repository
+git remote add origin ---> associate git repository with github repository
 
 Send the files from Eclipse to staging(Untracked to tracked)
 git status --> lists untracked and tracked files
@@ -274,6 +274,16 @@ git status
 git push -u origin master --> push files from git to github
 add email and password
 to verify if all the files are pushed to github -> navifate to github url https://github.com/madhuevg/SdetHybrid1.git and will see all the files
+
+Create a new file in Github
+git pull origin master - pulls file from Github to git
+git status -- 1 untracked file in red color
+git add -A -- 1 tracked file in green color
+git commit -m "message" - commited tracked files to git
+git push -u origin master -- file is commited in remote repository gitHub
+
+Update a file in Eclipse ( work space). These changes are not part of git or GitHub yet
+
 
 Pre-requisites
 --------------
