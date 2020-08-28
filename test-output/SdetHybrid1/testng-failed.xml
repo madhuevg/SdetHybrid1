@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SdetHybrid1]">
+<suite name="Failed suite [SdetHybrid1]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.SdetHybrid1.utilities.Reporting"/>
   </listeners>
   <test thread-count="5" name="BankingApp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.SdetHybrid1.testCases.TC_LoginTest_1">
+      <class name="com.SdetHybrid1.testCases.TC_AddCustomerTest_003">
         <methods>
+          <include name="addNewCustomer"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.SdetHybrid1.testCases.TC_LoginTest_1 -->
+      </class> <!-- com.SdetHybrid1.testCases.TC_AddCustomerTest_003 -->
     </classes>
   </test> <!-- BankingApp Test(failed) -->
 </suite> <!-- Failed suite [SdetHybrid1] -->

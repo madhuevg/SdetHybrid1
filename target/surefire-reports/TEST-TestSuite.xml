@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="15.939" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="5.046" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="10.0.2+13"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.2\bin"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1"/>
-    <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
@@ -18,7 +17,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="10.0.2+13"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\PKANTI~1\AppData\Local\Temp\"/>
@@ -26,40 +25,78 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\pkantipudi\eclipse-workspace\Learning\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4983604802931704473.tmp"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Condusiv Technologies\ExpressCache\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files\Java\jdk-11.0.8\bin;C:\Users\pkantipudi\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\pkantipudi\AppData\Local\Programs\Python\Python38-32;C:\apache-maven-3.6.3\bin;C:\apache-maven-3.6.3\bin\bin;C:\Program Files\Git\cmd;C:\Users\pkantipudi\Downloads\eclipse-jee-photon-R-win32-x86_64\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Condusiv Technologies\ExpressCache\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files\Java\jdk-11.0.8\bin;C:\Users\pkantipudi\Downloads\apache-ant-1.9.7-bin\apache-ant-1.9.7\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\pkantipudi\AppData\Local\Programs\Python\Python38-32;C:\apache-maven-3.6.3\bin;C:\apache-maven-3.6.3\bin\bin;C:\Program Files\Git\cmd;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="54.0"/>
+    <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\pkantipudi"/>
     <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="java.specification.version" value="10"/>
+    <property name="java.specification.version" value="11"/>
     <property name="user.name" value="pkantipudi"/>
-    <property name="java.class.path" value="C:\Users\pkantipudi\Downloads\eclipse-jee-photon-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035\jars\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="10"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-10.0.2"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="10.0.2"/>
+    <property name="java.version" value="11.0.8"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1\EMBEDDED"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2018-07-17"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="18.3"/>
+    <property name="java.vendor.version" value="18.9"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="addNewCustomer" classname="com.SdetHybrid1.testCases.TC_AddCustomerTest_003" time="15.939"/>
+  <testcase name="addNewCustomer" classname="com.SdetHybrid1.testCases.TC_AddCustomerTest_003" time="5.046">
+    <failure message="unexpected alert open: {Alert text : User or Password is not valid}&#10;  (Session info: chrome=84.0.4147.135): User or Password is not valid&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;PRATAP-T430S&apos;, ip: &apos;192.168.0.112&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\PKANTI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: aca9a7a41668d377d4b19ad5cbf3b126&#10;*** Element info: {Using=xpath, value=/html/body/div[3]/div/ul/li[2]/a}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=84.0.4147.135): User or Password is not valid
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PRATAP-T430S', ip: '192.168.0.112', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\PKANTI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aca9a7a41668d377d4b19ad5cbf3b126
+*** Element info: {Using=xpath, value=/html/body/div[3]/div/ul/li[2]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.SdetHybrid1.PageObjects.AddCustomerPage.clickAddNewCustomer(AddCustomerPage.java:68)
+	at com.SdetHybrid1.testCases.TC_AddCustomerTest_003.addNewCustomer(TC_AddCustomerTest_003.java:28)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+ INFO [main] (TC_AddCustomerTest_003.java:19)- User name is provided
+ INFO [main] (TC_AddCustomerTest_003.java:21)- Passsword is provided
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 34735
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1598631136.509][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Aug 28, 2020 9:12:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

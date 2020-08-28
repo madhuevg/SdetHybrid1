@@ -290,7 +290,31 @@ Pre-requisites
 1)Install git in your local system
 2) Create account in github
 
+git init   -- This command is used to start a new repository
+git remote add origin "https://github.com/madhuevg/SdetHybrid1.git" -- This command is used to add a "remote" repository URL <URL> which is referred in other git commands(such as pull or push) with the provided name
+git status -- This command lists all the files that have to be committed
+git add -A -- This command add all the files to the staging area
+git config --global user.name "madhuevg"
+git config --global user.email "madhuevg@gmail.com" -- These commands set the author name and email address respectively to be used with your commits
+git commit -m "message" -- This command commits any files you have added with the git add command and also commits any files you have changed since then
+git push -u origin master -- This command sends the commited changes of master branch to your remote repository
+git pull origin master -- This command pulls files from Github to git repository
 
+------------------------------------------------------------------------------------------------------------
+
+Configure how Jenkins get code from GitGub:
+
+Install git onto Jenkins server
+Install git plugin in Jenkins
+1. Goto Jenkins -- http://localhost:8080/
+2. New Item -> Maven project Name - OK 	
+	
+-----------------------------------------------------------------------------------
+SdetHybrid1_FreeStyle
+Build: cd C:\Users\pkantipudi\eclipse-workspace\Learning\SdetHybrid1
+run.bat
+My Project - 1
+echo %time%
 
 
 
