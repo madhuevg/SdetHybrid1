@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-28T17:58:45Z" name="SdetHybrid1" finished-at="2020-08-28T17:59:05Z" duration-ms="19982">
+  <suite started-at="2020-08-28T23:31:11Z" name="SdetHybrid1" finished-at="2020-08-28T23:31:32Z" duration-ms="20735">
     <groups>
     </groups>
-    <test started-at="2020-08-28T17:58:45Z" name="BankingApp Test" finished-at="2020-08-28T17:59:05Z" duration-ms="19982">
+    <test started-at="2020-08-28T23:31:11Z" name="BankingApp Test" finished-at="2020-08-28T23:31:32Z" duration-ms="20735">
       <class name="com.SdetHybrid1.testCases.TC_AddCustomerTest_003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T17:58:45Z" name="setup" finished-at="2020-08-28T17:58:50Z" duration-ms="4874" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T23:31:12Z" name="setup" finished-at="2020-08-28T23:31:15Z" duration-ms="3742" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T17:58:50Z" name="addNewCustomer" finished-at="2020-08-28T17:59:04Z" duration-ms="14179" status="PASS">
+        <test-method signature="addNewCustomer()[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T23:31:15Z" name="addNewCustomer" finished-at="2020-08-28T23:31:31Z" duration-ms="16001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T17:59:04Z" name="teardown" finished-at="2020-08-28T17:59:05Z" duration-ms="661" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.SdetHybrid1.testCases.TC_AddCustomerTest_003@508dec2b]" started-at="2020-08-28T23:31:31Z" name="teardown" finished-at="2020-08-28T23:31:32Z" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
